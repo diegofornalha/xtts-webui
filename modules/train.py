@@ -20,9 +20,8 @@ from xtts_webui import *
 
 
 def clear_gpu_cache():
-    # clear the GPU cache
-    if torch.cuda.is_available():
-        torch.cuda.empty_cache()
+    # Função no-op já que iremos utilizar CPU (Mac M2) e não há cache de GPU para limpar.
+    pass
 
 
 def preprocess_dataset(audio_path, language, whisper_model, out_path, train_status_bar):

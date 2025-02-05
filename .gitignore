@@ -27,3 +27,4 @@ scripts/resemble_enhance/model_repo.zip
 /python
 /tmp
 *.pyc
+/.venv

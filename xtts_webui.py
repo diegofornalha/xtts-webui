@@ -1,4 +1,3 @@
-
 from scripts.modeldownloader import get_folder_names_advanced
 from scripts.tts_funcs import TTSWrapper
 from silero_tts.silero_tts import SileroTTS
@@ -17,13 +16,13 @@ with open(css) as f:
     css = f.read()
 
 # Default Folders , you can change them via API
-DEVICE = os.getenv('DEVICE', "cuda")
+DEVICE = "cpu"
 OUTPUT_FOLDER = os.getenv('OUTPUT', 'output')
 SPEAKER_FOLDER = os.getenv('SPEAKER', 'speakers')
 BASE_URL = os.getenv('BASE_URL', '127.0.0.1:8020')
 MODEL_SOURCE = os.getenv("MODEL_SOURCE", "local")
-LOWVRAM_MODE = os.getenv("LOWVRAM_MODE") == 'true'
-USE_DEEPSPEED = os.getenv("DEEPSPEED", "true") == 'true'
+LOWVRAM_MODE = False
+USE_DEEPSPEED = False
 MODEL_VERSION = os.getenv("MODEL_VERSION", "v2.0.2")
 WHISPER_VERSION = os.getenv("WHISPER_VERSION", "none")
 

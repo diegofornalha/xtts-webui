@@ -81,13 +81,13 @@ with gr.Tab(i18n("Subtitle tools"), render=False):
                                                 "google", "bing", "baidu","deepl"], value="google")
                     deepl_auth_key_textbox = gr.Textbox(label="Deepl API Key", value="",type="password",visible=False)
                 
-                with gr.Accordion("Whisper settings",open=False):
-                        with gr.Row():
-                            get_sub_whisper_compute_time = gr.Radio(label="Compute Type",choices=["int8","float16"],value="float16",info="change to 'int8' if low on GPU mem (may reduce accuracy)")
-                            get_sub_whisper_device = gr.Radio(label="Device",choices=["cuda","cpu"],value="cuda",info="change to 'int8' if low on GPU mem (may reduce accuracy)")
-                        with gr.Row():
-                            get_sub_whisper_batch_size = gr.Slider(label="Batch Size", minimum=1, maximum=32, value=8, step=1,info="reduce if low on GPU mem")
-                            get_sub_whisper_aline = gr.Checkbox(value=True,label="Align whisper output")
+                with gr.Accordion(label=i18n("Whisper settings"), open=False):
+                    with gr.Row():
+                        get_sub_whisper_compute_time = gr.Radio(label="Compute Type", choices=["float32"], value="float32", info="Operação apenas em CPU, usando float32")
+                        get_sub_whisper_device = gr.Radio(label="Device", choices=["cpu"], value="cpu", info="Operação apenas em CPU")
+                    with gr.Row():
+                        get_sub_whisper_batch_size = gr.Slider(label="Batch Size", minimum=1, maximum=32, value=8, step=1, info="")
+                        get_sub_whisper_aline = gr.Checkbox(value=True, label="Align whisper output")
                     
             with gr.Column():
                 get_sub_status_label = gr.Label(value="Status")

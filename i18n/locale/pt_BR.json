@@ -1,7 +1,7 @@
 {
-    "Start loading model": "Iniciar carregamento do modelo",
+    "Start loading model": "Iniciando carregamento do modelo",
     " ": "Traduzido por Rafael Godoy Ebert | AI Hub Brasil",
-    "Select XTTS model version": "Selecionar versão do modelo XTTS",
+    "Select XTTS model version": "Selecione a versão do modelo XTTS",
     "Text2Voice": "Texto para Voz",
     "Voice2Voice": "Voz para Voz",
     "Train": "Treinar",
@@ -90,7 +90,7 @@
     "Reference Speaker Path": "Caminho do orador de referência",
     "Reference Audio": "Áudio de referência",
 
-    "Resemble Enhance": "Aprimoramento Resemble",
+    "Resemble Enhance": "Aprimorar Resemble",
     "Single file": "Arquivo único",
     "Batch files": "Arquivos em lote",
     "Path to folder with audio files (High priority)": "Caminho para a pasta com arquivos de áudio (Alta prioridade)",

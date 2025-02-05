@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "xtts-webui"
+version = "0.1.0"
+description = "Projeto Web UI para XTTS"
+authors = ["Seu Nome <seu_email@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+gradio = "4.43.0"
+torch = "2.6.0"
+torchaudio = "2.6.0"
+faster-whisper = ">=1.0.0,<1.2.0"
+coqui-tts = {extras = ["languages"], version = "0.24.2"}
+pypinyin = "*"
+hangul_romanize = "*"
+langid = "*"
+noisereduce = "*"
+pedalboard = "*"
+pydub = "*"
+ffmpeg-python = "*"
+soundfile = "*"
+cutlet = "*"
+fugashi = {extras = ["unidic-lite"], version = "*"}
+loguru = "*"
+omegaconf = "2.3.0"
+resampy = "0.4.2"
+tabulate = "0.8.10"
+requests = "*"
+faiss-cpu = "*"
+pyworld = "*"
+torchcrepe = "*"
+praat-parselmouth = ">=0.4.2"
+translators = "*"
+spacy = ">=3.2.0"
+transformers = "*"
+deepl = "*"
+pysubs2 = "*"
+whisperx = "*"
+silero-tts = "*"
+onnxruntime = "==1.19.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 
